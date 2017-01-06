@@ -14,7 +14,7 @@ $ npm install
 # 安装quasar工具行
 $ npm install -g quasar-cli
 
-# 启动开发服务器，localhost:8080
+# 启动开发服务器
 $ quasar dev
 
 # build for production with minification
