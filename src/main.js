@@ -13,6 +13,13 @@ import router from './router'
 import store from './store'
 import Model from './model'
 
+import * as filters from './filters'
+
+// 注册filter
+Object.keys(filters).forEach(key => {
+  Vue.filter(key, filters[key])
+})
+
 Vue.use(Quasar) // Install Quasar Framework
 Vue.use(VueResource)
 Vue.use(Model)

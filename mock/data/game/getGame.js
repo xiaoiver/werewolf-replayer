@@ -2,7 +2,20 @@ module.exports = function (params) {
     var cast = [];
     for (var i = 0; i <= 12; i++) {
         var seat = {
-            seatNum: i + 1
+            name: '玩家' + i,
+            seatNum: i + 1,
+            role: '',
+            actions: {
+                days: [],
+                nights: [
+                    {
+                        status: {
+                            alive: true,
+                            reason: ''
+                        }
+                    }
+                ]
+            }
         };
         cast.push(seat);
     }
